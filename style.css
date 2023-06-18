@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #19A2AE;
+    font-size: 14px;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow-y: hidden;
+}
+
+.card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 385px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 2px 25px 0px rgba(0,0,0,0.2);
+}
+
+.card-image svg {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-profile  img{
+    z-index: 1;
+    position: relative;
+    margin-top: -50px;
+    border: 5px solid #FFFFFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.name {
+    color: #2D3248;
+}
+.name .age {
+    color: #6A6F81;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.country {
+    color: #6A6F81;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.card-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E7E7E7;
+    padding: 20px 45px;
+}
+.followers, .likes, .photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-stats h2 {
+    color: #2D3248;
+}
+.card-stats span {
+    color: #696969;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    margin-top: 5px;
+}
